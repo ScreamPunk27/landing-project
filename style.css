@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@700&family=Roboto:wght@100&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+#page-project {
+    height: 100%;
+    /* font-family: 'DM Serif Display', serif;
+    font-family: 'Montserrat', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #1f2937;
+    background-image: url("./images/header.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+}
+
+@keyframes animation {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.nav__logo,
+.nav__links {}
+
+.nav__logo h1 {
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.nav__links ul {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline;
+    margin-left: 1em;
+}
+
+.nav__links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+#welcome {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 65%;
+    margin: 5em 0 5em 0;
+}
+
+.welcome__content,
+.welcome__img {
+    width: 50%;
+}
+
+.welcome__content h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+}
+
+.welcome__content p {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.welcome__content button {
+    color: #e5e7eb;
+    background: #3882f6;
+    margin-top: .5em;
+    padding: .5em 1.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.welcome__img {
+    /* background-color: gray; */
+    background-image: url("./images/batman-logo.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome__img p {
+    color: #e5e7eb;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    padding-bottom: 5em;
+}
+
+.info__title h1 {
+    color: #1f2937;
+}
+
+.info__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.content {
+    text-align: center;
+    width: 150px;
+}
+
+.content__img {
+    border: 4px solid #3882f6;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.content__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content__text {
+    margin-top: .5em;
+    color: gray;
+}
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8em 5em;
+    background: #e5e7eb;
+}
+
+.quote__content {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    color: #1f2937;
+    width: 65%;
+}
+
+.quote__author {
+    width: 65%;
+    text-align: right;
+}
+
+.quote__author p {
+    color: #000;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+#sign-up {
+    margin: 5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    background: #3882f6;
+    padding: 2em 7em;
+    border-radius: 5px;
+}
+
+.container__content h1 {
+    color: #fff;
+    font-weight: bolder;
+}
+
+.container__content p {
+    color: #e5e7eb;
+}
+
+.container__button button {
+    background: #3882f6;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: .5em 2em;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
